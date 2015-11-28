@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="home.aspx" title="HOME "  description="hello this is blood bank.">
+
+        <siteMapNode url="vision.aspx" title="Vision And Mission"  description=""></siteMapNode>
+
+            <siteMapNode url="people.aspx" title="People Behind"  description="">
+                <siteMapNode url="founders.aspx" title="Founders"  description=""/>
+                <siteMapNode url="volunteers.aspx" title="Volunteers "  description="" />
+            </siteMapNode>
+
+
+
+            <siteMapNode url="blood.aspx" title="Blood Donation Facts"  description="">
+            </siteMapNode>
+
+            <siteMapNode url="projects.aspx" title="Projects "  description="">
+                <siteMapNode url="completed.aspx" title="Completed Missions "  description=""/>
+                
+            </siteMapNode>
+            <siteMapNode url="Login.aspx" title= "Login"  description="" >
+                <siteMapNode url="donorlog.aspx" title="Donor Login"  description="" />
+                <siteMapNode url="patientlog.aspx" title="Patient Login "  description="" />
+            </siteMapNode>
+            <siteMapNode url="achievements.aspx" title="Achievements "  description=""></siteMapNode>
+            <siteMapNode url="gallery.aspx" title="Gallery "  description=""></siteMapNode>
+            
+
+    </siteMapNode>
+</siteMap>

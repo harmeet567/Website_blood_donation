@@ -1,0 +1,281 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet2.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet3.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet4.css" rel="stylesheet" type="text/css" />
+    <title></title>
+      <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style12
+        {
+            width: 97%;
+            height: 873px;
+            margin-top: 4px;
+            margin-bottom: 0px;
+            margin-right: 0px;
+        }
+        .style13
+        {
+            width: 213px;
+            height: 295px;
+        }
+        .style15
+        {
+            height: 295px;
+        }
+        .style17
+        {
+            width: 108px;
+            height: 130px;
+        }
+        .style18
+        {
+            width: 102px;
+            height: 56px;
+        }
+        .style19
+        {
+            width: 88px;
+            height: 48px;
+        }
+        </style>
+</head>
+<body style="height: 891px; width: 1360px; margin-right: 10px;">
+    <form id="form1" runat="server">
+    <div id="master" runat="server">
+    <div id="main" runat="server">
+    
+        <div style="height: 150px; width: 1366px">
+            <img class="style30" src="images/halfpint.jpg" /><img class="style28" 
+                src="images/cover.JPG" /><img class="style27" src="images/blood.png" /><img 
+                class="style29" src="images/jj.JPG" /></div>
+        </div>
+        <div>
+        <table class="style12">
+                <tr>
+                
+                    <td class="style13">
+                    
+                    <div style="height: 885px; width: 285px;">
+                        <asp:TreeView ID="TreeView1" runat="server"  
+                            ImageSet="Contacts" DataSourceID="SiteMapDataSource1" 
+                            Height="684px" Width="286px" Font-Bold="True" Font-Names="Times New Roman" 
+                            ForeColor="#0033CC" NodeWrap="True" NodeIndent="10">
+                            <HoverNodeStyle Font-Underline="False" />
+                            <NodeStyle Font-Names="Times New Roman" Font-Size="15pt" ForeColor="Black" 
+                                HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                            <ParentNodeStyle Font-Bold="True" ForeColor="#5555DD" />
+                           
+                            <SelectedNodeStyle Font-Underline="True" 
+                                HorizontalPadding="0px" VerticalPadding="0px" />
+                        </asp:TreeView>
+                        
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                        <br />
+                        <br />
+                        </div>
+                    
+                   
+                        </td>
+
+                        
+                    <td class="style26">
+
+                        <div style="height: 872px; width: 784px; margin-top: 0px; margin-right: 0px;">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+           </asp:ContentPlaceHolder></div>
+                    
+                    </td>
+                    
+                    <td class="style15">
+                        <div style="height: 865px; width: 243px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+                    
+                        <div style="height: 149px; width: 280px;">
+                        <a href="donorlog.aspx">
+                        <style>
+
+                               a img {border:none; }
+
+                                 </style>
+                            <img class="style17" src="images/donate.JPG" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="patientlog.aspx">
+                        <style>
+
+                               a img {border:none; }
+
+                                 </style>
+                            <img class="style22" src="images/khl.PNG" /></a><br />
+&nbsp;&nbsp;&nbsp;<asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                                PostBackUrl="~/donorlog.aspx"> !!Click Here!!</asp:LinkButton>       
+                             
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; 
+                            <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton1_Click" 
+                                PostBackUrl="~/patientlog.aspx"> !!Click Here!!</asp:LinkButton>       
+                             
+
+                            </div>
+                        <div style="height: 570px; width: 248px;">  
+                        
+                        
+                            <br />
+&nbsp;                       
+                           <style>
+
+                               a img {border:none; }
+
+                                 </style>                        
+                           <a href="gallery.aspx" > <img class="style18" src="images/gal.JPG" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="people.aspx">
+                            <style>
+
+                               a img {border:none; }
+
+                                 </style>
+                            <img class="style19" src="images/people.JPG" />
+                            </a>
+                            <br />
+                            <br />
+&nbsp;&nbsp;
+                            <a href="friends.aspx">
+                            <style>
+
+                               a img {border:none; }
+
+                                 </style>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <style>
+
+                               a img {border:none; }
+
+                                 .style22
+                                {
+                                    width: 92px;
+                                    height: 120px;
+                                    margin-left: 0px;
+                                }
+
+                                 .style23
+                                {
+                                    width: 114px;
+                                    height: 34px;
+                                    margin-left: 0px;
+                                }
+                                .style24
+                                {
+                                    width: 118px;
+                                    height: 36px;
+                                }
+                                .style25
+                                {
+                                    width: 118px;
+                                    height: 36px;
+                                }
+
+                                 .style26
+                                {
+                                    width: 986px;
+                                }
+                                .style27
+                                {
+                                    width: 188px;
+                                    height: 152px;
+                                    margin-left: 0px;
+                                }
+                                .style28
+                                {
+                                    width: 578px;
+                                    height: 152px;
+                                }
+                                .style29
+                                {
+                                    width: 494px;
+                                    height: 152px;
+                                }
+                                .style30
+                                {
+                                    width: 103px;
+                                    height: 152px;
+                                }
+
+                                 </style>
+                            
+                            
+                            <br />
+                            <div style="height: 417px" id="demo" runat="server">
+                            
+                            
+                                <br />
+                                &nbsp;<br />
+&nbsp;<img class="style24" src="images/admin.jpg" />&nbsp;&nbsp;&nbsp;
+                                <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="White" 
+                                    PostBackUrl="~/adminlogin.aspx" OnClick="LinkButton3_Click">click here</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;<br />
+                                <br />
+                                <br />
+                                &nbsp;&nbsp;&nbsp;
+                                <br />
+                                <br />
+                                <br />
+&nbsp;<img class="style23" src="images/donor.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:LinkButton 
+                                    ID="LinkButton4" runat="server" 
+                                    ForeColor="White" PostBackUrl="~/donorlog.aspx" OnClick="LinkButton4_Click">click here</asp:LinkButton>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+&nbsp;<img class="style25" src="images/patient.jpg" />&nbsp;&nbsp;&nbsp;
+                                <asp:LinkButton ID="LinkButton5" runat="server" ForeColor="White" 
+                                    PostBackUrl="~/patientlog.aspx">click here</asp:LinkButton>
+                            
+                            
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                            
+                            
+                                </div>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        
+                        
+                        </div>
+
+                        </div>
+                    </td>
+                       
+                </tr>
+            </table>
+          </div>
+             
+          </div>
+    </form>
+</body>
+</html>
